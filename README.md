@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-Декоративные эффекты и элементы &amp; Векторная графика
+# goit-markup-hw-03
+CSS Styles Lessons 5&amp;6 HW3
