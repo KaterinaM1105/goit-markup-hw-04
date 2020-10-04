@@ -15,6 +15,7 @@
   --border-color: #eeeeee;
   --border-bottom-color: #ececec;
   --gradient-color: rgba(47, 48, 58, 0.4);
+  --social-links-color: #afb1b8;
 }
 *,
 *::before,
@@ -237,7 +238,7 @@ img {
   height: 120px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-  background-image: url(../images/advantages/antenna.svg);
+  background-image: url(../images/advantages/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -248,7 +249,7 @@ img {
   height: 120px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-  background-image: url(../images/advantages/clock.svg);
+  background-image: url(../images/advantages/clock.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -259,7 +260,7 @@ img {
   height: 120px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-  background-image: url(../images/advantages/diagram.svg);
+  background-image: url(../images/advantages/diagram.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -270,7 +271,7 @@ img {
   height: 120px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
-  background-image: url(../images/advantages/astronaut.svg);
+  background-image: url(../images/advantages/astronaut.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -379,6 +380,34 @@ img {
 .team-element {
   padding-bottom: 30px;
 }
+.social-links {
+  display: flex;
+}
+.social-list-item {
+  margin-left: 10px;
+}
+.social-list-item:first-child {
+  margin-left: 32px;
+}
+.social-list-item:last-child {
+  margin-right: 32px;
+}
+.social-link-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+}
+.social-link-item:hover .social-list-svg {
+  fill: var(--white-color);
+}
+.social-link-item:hover {
+  background-color: var(--accent-color);
+}
+
 /* ======== END OUR TEAM ========*/
 
 /* ======== PORTFOLIO ======== */
