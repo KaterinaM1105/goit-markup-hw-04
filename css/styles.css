@@ -203,10 +203,6 @@ img {
   padding: 10px 32px;
   margin-top: 30px;
 }
-.button:hover,
-.button:focus {
-  background-color: var(--black-color);
-}
 /* ======== END BUTTON ======== */
 /* ======= OUR ADVANTAGES ======== */
 
@@ -520,6 +516,11 @@ img {
 .portfolio-element:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.portfolio-element:hover,
+.portfolio-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-content {
   padding: 20px 24px;
 
@@ -528,10 +529,18 @@ img {
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
+.portfolio-name:hover,
+.portfolio-name:focus {
+  color: var(--accent-color);
+}
 /* ======== END PORTFOLIO ======== */
 /* ======= CONTACTS ========= */
 
 .contacts .container {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -563,25 +572,27 @@ img {
 /* ======= END CONTACTS ========= */
 /* ======= JOIN US ========= */
 .join-us {
-  display: flex;
+  margin-left: 70px;
 }
 .join-us-title {
+  display: flex;
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
+  font-style: none;
 }
 .footer-social-links {
   display: flex;
-  margin-left: 70px;
+  align-items: center;
 }
 .footer-social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 10px;
+}
+.footer-social-item:first-child {
+  margin-left: 0px;
 }
 .footer-social-svg {
   height: 44px;
