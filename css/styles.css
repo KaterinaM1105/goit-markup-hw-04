@@ -172,7 +172,7 @@ img {
       var(--gradient-color),
       var(--gradient-color)
     ),
-    url("../images/hero/hero.png");
+    url("./images/hero/hero.png");
 }
 .hero .container {
   text-align: center;
