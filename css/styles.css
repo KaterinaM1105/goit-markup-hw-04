@@ -166,7 +166,7 @@ img {
 /* ======== HERO ======== */
 .hero {
   margin: 0 auto;
-  min-width: 1600px;
+  max-width: 1600px;
   background-image: linear-gradient(
       var(--gradient-color),
       var(--gradient-color)
