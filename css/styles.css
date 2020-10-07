@@ -380,7 +380,7 @@ img {
 .social-list-item:focus {
   --color4: var(--accent-color);
 }
-.social-list-svg {
+.social-list-item svg {
   height: 44px;
   width: 44px;
 }
