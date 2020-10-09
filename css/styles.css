@@ -367,26 +367,27 @@ img {
   justify-content: center;
   padding-bottom: 22px;
 }
-.social-list-item {
+.social-link-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: 10px;
-
+  background-color: var(--white-color);
   border-radius: 50%;
-}
-
-.social-list-item:hover,
-.social-list-item:focus {
-  --color4: var(--accent-color);
-}
-.social-list-item svg {
-  height: 44px;
   width: 44px;
+  height: 44px;
+}
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-links-color);
+}
+.social-list-item:hover .social-list-svg,
+.social-list-item:focus .social-list-svg {
+  fill: var(--white-color);
 }
 .social-link-item:hover,
 .social-link-item:focus {
-  --color5: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* ======== END OUR TEAM ========*/
@@ -404,24 +405,35 @@ img {
 .clients-list {
   display: flex;
 }
-.clients-logo {
+.clients-link {
   display: flex;
 }
-.clients-link {
+
+.clients-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--social-links-color);
+  margin-right: 30px;
+
   width: 170px;
   height: 90px;
-  border: 1px solid var(--social-links-color);
+}
+.clients-logo {
+  display: flex;
+
   fill: var(--social-links-color);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-item:hover .clients-logo,
+.clients-item:focus .clients-logo {
+  fill: var(--accent-color);
+}
+.clients-item:hover,
+.clients-item:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
-.clients-link:not(last-child) {
+.clients-item:not(last-child) {
   margin-right: 30px;
 }
 /* ======== END CLIENTS ========== */
@@ -581,23 +593,33 @@ img {
   display: flex;
   align-items: center;
 }
-.footer-social-item {
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-social-links);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.footer-list-item {
   margin-left: 10px;
 }
-.footer-social-link svg {
-  height: 44px;
-  width: 44px;
-}
-.footer-social-item:first-child {
+.footer-list-item:first-child {
   margin-left: 0px;
 }
-.footer-social-link {
-  --color4: var(--footer-social-links);
-  --color5: var(--white-color);
-  border-radius: 50%;
+.footer-social-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
-  --color4: var(--accent-color);
+  background-color: var(--accent-color);
+}
+.social-list-item:hover .footer-social-svg,
+.social-list-item:focus .social-list-svg {
+  fill: var(--white-color);
 }
 /* ======= END JOIN US ========= */
